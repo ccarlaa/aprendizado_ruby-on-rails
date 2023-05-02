@@ -1,15 +1,29 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+<div class="container">
+  <h1 class="index-title">Posts</h1>
 
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
-  <% end %>
+  <div id="posts">
+    <% @posts.each do |post| %>
+      <div class="index-post">
+        <div class="index-post-align">
+          <%= check_box_tag "task_ids[]", post.id %>
+          <div>
+            <p><b>Titulo:</b> <%= post.titulo %></p>
+            <p><b>Descrição:</b> <%= post.description %></p>
+          </div>
+        </div>
+        <p>
+          <%= link_to ">", post, style: "text-decoration: none; font-weight: 700"%>
+        </p>
+      </div>
+    <% end %>
+  </div>
+  <div class="index-new-post-align">
+    <div class="index-new-post">
+      <%= link_to "+", new_post_path, style: "text-decoration: none;"%>
+    </div>
+  </div>
 </div>
 
-<%= link_to "New post", new_post_path %>
 

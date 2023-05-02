@@ -1,9 +1,12 @@
-<h1>New post</h1>
+<div class="container">
+  <div class="new-back-posts-align">
+    <div class="index-new-post">
+      <%= link_to "<", posts_path, style: "text-decoration: none; font-size: 16px"%>    
+    </div>
+  </div>
+  <h1 class="new-post-title">New post</h1>
 
-<%= render "form", post: @post %>
+  <%= render "form", post: @post %>
 
-<br>
-
-<div>
-  <%= link_to "Back to posts", posts_path %>
+  <br>
 </div>

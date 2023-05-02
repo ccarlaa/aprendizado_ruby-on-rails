@@ -12,16 +12,16 @@
   <% end %>
 
   <div>
-    <%= form.label :titulo, style: "display: block" %>
-    <%= form.text_field :titulo %>
+    <%= form.label :titulo, style: "display: block; padding: 10px 0px 10px 0px" %>
+    <%= form.text_field :titulo, style: "width: calc(100% - 10px); border: none; border-radius: 10px; padding: 10px 0px 10px 10px"%>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.label :descrição, style: "display: block; padding: 10px 0px 10px 0px" %>
+    <%= form.text_area :description, style: "min-width: calc(100% - 10px); max-width: calc(100% - 10px); border: none; border-radius: 10px; padding: 10px 0px 10px 10px"%>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="new-post-button">
+    <%= form.submit style: "padding: 10px; border: none; background-color: rgb(102, 102, 212); margin-top: 20px; border-radius: 10px"%>
   </div>
 <% end %>

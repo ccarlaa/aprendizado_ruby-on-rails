@@ -1,3 +1,81 @@
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2d2d2d;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 220px;
+    height: auto;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: rgb(209, 209, 254);
+    border-radius: 10px;
+}
+
+.index-post {
+    width: 100%;
+    height: auto;
+    background-color: rgb(185, 185, 250);
+    border-radius: 5px;
+    padding: 12px;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.index-post-align {
+    display: flex;
+    gap: 10px;
+}
+
+.index-new-post {
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+    background-color: rgb(102, 102, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    right: 0px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.index-new-post-align {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#posts {
+    padding-right: 20px;
+}
+
+p {
+    height: 20px;
+}
+
+.new-back-posts-align {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.new-post-title {
+    padding-top: 20px;
+}
+
+.new-post-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
