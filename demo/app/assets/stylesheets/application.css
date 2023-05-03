@@ -114,3 +114,8 @@ p {
     height: auto;
     padding-top: 20px;
 }
+
+.red {
+    background-color: red;
+}
+  

@@ -6,7 +6,7 @@
     <% @posts.each do |post| %>
       <div class="index-post">
         <div class="index-post-align">
-          <%= check_box_tag "task_ids[]", post.id %>
+          <input type="checkbox" name="task_ids[]" data-hello-target="checkbox" data-post-target="post">
           <div>
             <p><b>Titulo:</b> <%= post.titulo %></p>
             <p><b>Descrição:</b> <%= post.description %></p>
