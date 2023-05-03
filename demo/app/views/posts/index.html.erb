@@ -1,7 +1,6 @@
-<p style="color: green"><%= notice %></p>
-
-<div class="container">
+<div class="container" data-controller="hello">
   <h1 class="index-title">Posts</h1>
+  <p>Selecionadas: <span data-hello-target="count">0</span></p>
 
   <div id="posts">
     <% @posts.each do |post| %>
